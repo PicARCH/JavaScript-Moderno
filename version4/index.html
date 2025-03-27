@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>buscardor de Autos</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <section class="buscador-autos">
+    <h2 >Buscador de Autos</h2>
+    <form class="buscador-autos__formulario">
+      <div>
+        <label for="opciones">Marca</label>
+        <select  id="marca" >
+          <option value="">Selecione</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Honda">Honda</option>
+          <option value="Ford">Ford</option>
+          <option value="Nissan">Nissan</option>
+        </select>
+      </div>
+      <div>
+        <label for="opciones">Año</label>
+        <select id="anio" >
+          <option value="">Selecione</option>
+        </select>
+      </div>
+      <div>
+        <label for="opciones">Precio minimo</label>
+        <select id="precioMinimo">
+          <option value="">Selecione</option>
+          <option value="12000">12000</option>
+          <option value="15000">15000</option>
+          <option value="17000">17000</option>
+          <option value="18000">18000</option>
+          <option value="20000">20000</option>
+          <option value="22000">22000</option>
+          <option value="25000">25000</option>
+        </select>
+      </div>
+      <div>
+        <label for="opciones">Precio maximo</label>
+        <select id="precioMaximo" >
+          <option value="">Selecione</option>
+          <option value="12000">12000</option>
+          <option value="15000">15000</option>
+          <option value="17000">17000</option>
+          <option value="18000">18000</option>
+          <option value="20000">20000</option>
+          <option value="22000">22000</option>
+          <option value="25000">25000</option> 
+        </select>
+      </div>
+      <div>
+        <label for="opciones">Puertas</label>
+        <select id="puertas">
+          <option value="">Seleccione</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div>
+        <label for="opciones">Transmision</label>
+        <select id="transmision">
+          <option value="">Selecione</option>
+          <option value="Automatico">Automatico</option>
+          <option value="Manual">Manual</option>
+        </select>
+      </div>
+      <div>
+        <label for="opciones">Color</label>
+        <select id="color">
+          <option value="">Selecione</option>
+          <option value="Blanco">Blanco</option>
+          <option value="Negro">Negro</option>
+          <option value="Rojo">Rojo</option>
+          <option value="Azul">Azul</option>
+        </select>
+      </div>
+    </form>
+    <div class="buscador-autos__respuesta">
+      <h2>Resultado</h2>
+      <div id="resultados" class="resultados">
+        
+      </div>
+    </div>
+
+  </section>
+  <script src="bd.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
